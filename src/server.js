@@ -1,0 +1,13 @@
+import express from "express";
+
+const PORT = 4000;
+
+const app = express();
+
+app.get("/", () => console.log("Home"));
+
+const handleListening = () => {
+  console.log(`🔥 http://localhost:${PORT}`);
+};
+
+app.listen(PORT, handleListening);
