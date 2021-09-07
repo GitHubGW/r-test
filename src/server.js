@@ -8,6 +8,8 @@ const PORT = 4000;
 
 const app = express();
 
+app.set("views", "./src/views");
+app.set("view engine", "pug");
 app.use(morgan("dev"));
 app.use("/", globalRouter);
 app.use("/users", userRouter);
