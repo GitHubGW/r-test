@@ -1,4 +1,6 @@
 export const hanldeVideo = (req, res) => {
+  console.log(req.params);
+
   return res.send("Video");
 };
 

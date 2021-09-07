@@ -1,5 +1,5 @@
 export const handleHome = (req, res) => {
-  res.send("Home");
+  res.render("home");
 };
 
 export const handleJoin = (req, res) => {
