@@ -3,9 +3,12 @@ import { hanldeVideo, handleEditVideo, hanldeDeleteVideo, handleUploadVideo } fr
 
 const videoRouter = express.Router();
 
-videoRouter.get("/:id", hanldeVideo);
-videoRouter.get("/:id/edit", handleEditVideo);
-videoRouter.get("/:id/delete", hanldeDeleteVideo);
+// Regular Expression
+// (\w+): All String, Number
+// (\d+): Only Number
+videoRouter.get("/:id(\\d+)", hanldeVideo);
+videoRouter.get("/:id(\\d+)/edit", handleEditVideo);
+videoRouter.get("/:id(\\d+)/delete", hanldeDeleteVideo);
 videoRouter.get("/upload", handleUploadVideo);
 
 export default videoRouter;
