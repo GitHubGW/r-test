@@ -1,17 +1,4 @@
-export const hanldeVideo = (req, res) => {
-  console.log(req.params);
-
-  return res.send("Video");
-};
-
-export const handleEditVideo = (req, res) => {
-  return res.send("Edit Video");
-};
-
-export const hanldeDeleteVideo = (req, res) => {
-  return res.send("Delete Video");
-};
-
-export const handleUploadVideo = (req, res) => {
-  return res.send("Upload Video");
-};
+export const hanldeVideo = (req, res) => res.send("Video");
+export const handleEditVideo = (req, res) => res.send("Edit Video");
+export const hanldeDeleteVideo = (req, res) => res.send("Delete Video");
+export const handleUploadVideo = (req, res) => res.send("Upload Video");
