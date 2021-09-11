@@ -1,6 +1,11 @@
 extends layout.pug
+include mixins/video.pug
 
 block content 
-  h1 Home
+  h1 Home.pug
   input(type="text" placeholder="What is your name?")
   button Send
+  each video in videos
+    +mixinVideo(video)
+  else 
+    div No Video
