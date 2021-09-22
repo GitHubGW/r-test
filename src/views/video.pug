@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content 
+  h1 Video.pug
+  h2 Title: #{video.title}
+  h3 Rating: #{video.rating}
+  h3 #{video.views < 2 ? "View" : "Views"}: #{video.views}
+  a(href=`${video.id}/edit`) Edit Video &rarr;

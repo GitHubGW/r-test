@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content 
+  h1 editVideo.pug
+  h2 Editing #{video.title}
+  form(method="POST")
+    input(name="videoTitle" type="text" placeholder="Video Title" value=`${video.title}` required)
+    input(type="submit" value="Save")

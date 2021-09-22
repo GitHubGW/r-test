@@ -1,6 +1,7 @@
 mixin mixinVideo(video)
   div
-    h4=video.title
+    h4
+      a(href=`/videos/${video.id}`) #{video.title} 
     ul
       li Rating: #{video.rating}
       li Comments: #{video.comments}

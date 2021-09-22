@@ -1,5 +1,5 @@
 extends layout.pug
-include mixins/video.pug
+include mixins/mixinVideo.pug
 
 block content 
   h1 Home.pug
@@ -7,5 +7,5 @@ block content
   button Send
   each video in videos
     +mixinVideo(video)
-  else 
+  else
     div No Video
