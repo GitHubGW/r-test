@@ -1,16 +1,24 @@
-youtube-clone-2021
+# YouTube-Clone-2021
 
-/ -> Home
-/join -> Join
-/login -> Login
-/search -> Search
+### Routes
 
-/users/:id -> See User
-/users/logout -> Log Out
-/users/edit -> Edit MY Profile
-/users/delete -> Delete MY Profile
+#### Global Router
 
-/videos/:id -> See Video
-/videos/:id/edit -> Edit Video
-/videos/:id/delete -> Delete Video
-/videos/upload -> Upload Video
+- / -> Home
+- /join -> Join
+- /login -> Login
+- /search -> Search
+
+#### User Router
+
+- /users/:id -> Show User
+- /users/logout -> Log Out
+- /users/edit -> Edit MY Profile
+- /users/delete -> Delete MY Profile
+
+#### Video Router
+
+- /videos/:id -> Show Video
+- /videos/:id/edit -> Edit Video
+- /videos/:id/delete -> Delete Video
+- /videos/upload -> Upload Video
