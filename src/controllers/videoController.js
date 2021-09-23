@@ -61,3 +61,25 @@ export const handlePostEditVideo = (req, res) => {
 export const hanldeDeleteVideo = (req, res) => res.send("Delete Video");
 
 export const handleUploadVideo = (req, res) => res.send("Upload Video");
+
+export const handleGetUpload = (req, res) => {
+  return res.render("upload", { title: "Upload Video" });
+};
+
+export const handlePostUpload = (req, res) => {
+  // 하나의 비디오를 배열에 추가
+
+  const newVideo = {
+    id: videos.length + 1,
+    title: req.body.videoTitle,
+    rating: 1,
+    comments: 0,
+    createdAt: "1mins ago",
+    views: 15,
+  };
+  videos.push(newVideo);
+
+  console.log("asd", videos);
+
+  return res.redirect("/");
+};
