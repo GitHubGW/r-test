@@ -1,6 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import "./db";
+import "./models/Video";
 import globalRouter from "./routers/globalRouter";
 import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";

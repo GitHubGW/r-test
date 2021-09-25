@@ -16,7 +16,13 @@ videoRouter.route("/:id(\\d+)/edit").get(handleGetEditVideo).post(handlePostEdit
 
 ```
 mongo --version: Mongo Shell 버전 확인
+mongod --config /usr/local/etc/mongod.conf --fork: MongoDB 실행(Intel Mac)
+mongod --config /opt/homebrew/etc/mongod.conf --fork: MongoDB 실행(M1 Mac)
 mongosh: Mongo Shell 실행 (mongo에서 대체됨)
 exit: Mongo Shell 종료
 show dbs: 모든 데이터베이스를 보여준다.
 ```
+
+### Mongoose Schema
+
+- Schema: https://mongoosejs.com/docs/guide.html
